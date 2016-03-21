@@ -79,7 +79,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dcbfd', end
     }
 	form{ 
 
-		 padding:30px 100px 0 100px;
+		 padding:30px 105px 0 105px;
 	 }
 	 .rgb{
 	 	  background-color: rgba(0, 0, 0, 0.6);
@@ -89,12 +89,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dcbfd', end
 		   width: 500px;
 	   }
 	   .box1{
-	   		 height: 600px;
 	   		 margin-top: 1px;
 			 margin-bottom: 170px;
 	    }
 		.line {
-			  padding: 10px 54px 10px 53px;
+			  padding: 10px 108px 10px 20px;
 			  color: grey;
 			  border-width: 0;
 			  border-bottom: 1px solid grey;
@@ -120,7 +119,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121212', end
 				 
 		    }
 			p{color: #D3D3D3;
-font-size:12px;}
+            font-size:12px;}
 .galochka{
 		  color: #D3D3D3;
  }
@@ -168,6 +167,7 @@ background-color: blue;
 		   border-bottom-color: black;
 	 }
 	 .logo{
+           text-align:center;
 	 	   margin-bottom: 30px;
 	  }
 	  .lin{

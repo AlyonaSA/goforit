@@ -1,0 +1,29 @@
+  body{
+			   background: #EEEEE0;
+			}
+			.ten{font-weight: bold; 
+				text-align:center;
+				font-size:25px;
+				}
+			.one{
+				background: white;
+				background-position: center;
+                width: 700px;
+                
+ 				background-repeat: no-repeat;
+  				background-position: center;
+                margin: 0 auto;
+				border: 2px solid #CDCDC1;
+				font-size: 20px;
+				padding: 100px;
+			}
+			.three{text-align:center; } 
+			
+			 img{border-radius: 15px; }
+			  .line{
+			  border-bottom: 1px solid grey;
+			   }
+			.line1{
+			  border-bottom: 1px solid grey;
+			  border-top: 1px solid grey;
+			   }

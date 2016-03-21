@@ -31,8 +31,11 @@ z-index: 1;
 border-bottom: 2px solid #AFEEEE;
 border-top: 2px solid #AFEEEE;
  }
+ .block {
+        display:block;
+  }
 			.container{
-					   
+					   overflow:hidden;
 					   width: 996px;
 					   margin: 0 auto;
 					   background-color: white;
@@ -74,11 +77,14 @@ z-index: 2;
 								 color: white;
 								 text-decoration:none;
 			    }
+                ul.main-menu-list li:hover{
+                                      background-color: #1E90FF;
+                 }
 				
 				 ul.submenu {
 				 			display:none;
 							position:absolute;
-							width: 160px;
+							width: 157px;
 							top: 37px;
 							left: 0;
 							-webkit-box-shadow: 3px 7px 13px 0px rgba(0,0,0,0.75);
@@ -93,7 +99,7 @@ z-index: 2;
 				  ul.submenu1 {
 				 			display:none;
 							position:absolute;
-							width: 120px;
+							width: 114px;
 							top: 37px;
 							left: 0;
 							-webkit-box-shadow: 3px 7px 13px 0px rgba(0,0,0,0.75);
@@ -122,6 +128,38 @@ z-index: 2;
 					 			  display:block;
 								  border-top: 1px solid black;
 					  }
+                      ul.submenu2 {
+				 			display:none;
+							position:absolute;
+							width: 145px;
+							top: 37px;
+							left: 0;
+							-webkit-box-shadow: 3px 7px 13px 0px rgba(0,0,0,0.75);
+							-moz-box-shadow: 3px 7px 13px 0px rgba(0,0,0,0.75);
+							box-shadow: 3px 7px 13px 0px rgba(0,0,0,0.75);
+							background: rgb(94,94,94); 
+    							   background: -moz-linear-gradient(top,  rgba(94,94,94,1) 0%, rgba(68,67,67,1) 100%); 
+   								    background: -webkit-linear-gradient(top,  rgba(94,94,94,1) 0%,rgba(68,67,67,1) 100%); 
+    								background: linear-gradient(to bottom,  rgba(94,94,94,1) 0%,rgba(68,67,67,1) 100%); 
+									filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e5e5e', endColorstr='#444343',GradientType=0);
+				  }
+				  ul.submenu2 > li {
+				  			 display:block;
+				   }
+				   ul.submenu2 > li > a{
+				   			  display:block;
+							  padding: 10px;
+							  color: white;
+							  text-decoration: none;
+							  
+				    }
+					ul.submenu2 > li > a:hover {
+							   text-decoration: none;
+					 }
+					 ul.main-menu-list > li:hover > ul.submenu2 {
+					 			  display:block;
+								  border-top: 1px solid black;
+					  }
 					ul.submenu1 > li {
 				  			 display:block;
 				   }
@@ -139,14 +177,6 @@ z-index: 2;
 					 			  display:block;
 								  border-top: 1px solid black;
 					  }
-					  
-					  
-					  
-					  
-					  .seredina{
-					  			 width: 996px;
-								 overflow:hidden;
-					   }
 					   .left{
 					   		 width: 200px;
 							 float:left;
@@ -209,6 +239,10 @@ z-index: 2;
 							 line-height: 4px;
 							 color: #008B8B;
 						 }
+                        .contact a{
+                                  color: #008B8B;
+                                 text-decoration:none;
+                         }
 						ul.mald{
 								padding-top: 10px;
 								clear:right;
@@ -244,3 +278,9 @@ z-index: 2;
 						  text-decoration:none;
 						  color:#008B8B;
 						   }
+                           .contact a:hover {
+                                        color: blue;
+                            }
+                            .mald a:hover {
+                                         color: blue;
+                             }
