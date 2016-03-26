@@ -1,7 +1,7 @@
 var data = {
 	'pageTitle': 'Тест по программированию',
 	'questions': [{
-		'questionName': '1. Вопрос №1',
+		'questionName': { 'name': 'Вопрос №1' },
 		'questionList': [{
 			'title': 'Вариант ответа №1'
 		},
@@ -13,7 +13,7 @@ var data = {
 		}]
 	},
 	{
-		'questionName': '2. Вопрос №2',
+		'questionName': {'name': 'Вопрос №2'},
 		'questionList': [{
 			'title': 'Вариант ответа №1'
 		},
@@ -25,7 +25,7 @@ var data = {
 		}]
 	},
 	{
-		'questionName': '3. Вопрос №3',
+		'questionName': {'name': 'Вопрос №3'},
 		'questionList': [{
 			'title': 'Вариант ответа №1'
 		},
@@ -53,14 +53,16 @@ var data = {
 			var questionBox = document.createElement('div');
 			questionBox.className = 'questionBox';
 			document.querySelector('.wrapper').appendChild(questionBox);
-
-			var titleQuestion = document.createElement('h3');
-			titleQuestion.innerHTML = data.questions[i].questionName;
-			questionBox.appendChild(titleQuestion);
-
+			
+			var listNum = document.createElement('ol');
+			questionBox.appendChild(listNum);
+for (var k = 0; k < data.questions[i].questionName.length; k++) {
+			var listLi = document.createElement('li');
+			listLi.innerHTML = data.questions[i].questionName[k].name;
+			listNum.appendChild(listLi);
+			
 			var listWrap = document.createElement('ul');
-			questionBox.appendChild(listWrap);
-
+			listLi.appendChild(listWrap);
 			for(var j = 0; j < data.questions[i].questionList.length; j++) {
 				var listItem = document.createElement('li');
 				listWrap.appendChild(listItem);
@@ -77,6 +79,8 @@ var data = {
 				label.appendChild(p);
 
 				p.innerHTML = data.questions[i].questionList[j].title;
+			
+			}
 			}
 		}
 	},

@@ -17,12 +17,14 @@ html, body{
 	display: table;
 	height: 100%;
 	width: 100%;
+	table-layout: fixed;
+	min-width: 1060px;
 }
 
 .container{
 	padding: 0 30px;
 	width: 1040px;
- 
+ 	height: 100%;
 	margin: 0 auto;
 }
 
@@ -168,4 +170,7 @@ html, body{
 	content: '';
 	display: block;
 	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
 }

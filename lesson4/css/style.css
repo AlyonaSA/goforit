@@ -15,7 +15,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0A85FF', end
 			.wrapper{
 					 display: table;
 					 height: 100%;
-					 width: 100%;					 
+					 width: 100%;
+					 min-width: 1000px;
+					 table-layout: fixed;
 					 }
 			.one{clear: right;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#46d2fc+0,53cbf1+39,f7f7f7+100 */
 background: rgb(70,210,252); /* Old browsers */
@@ -208,6 +210,7 @@ z-index: 2;
 						   padding-top: 10px;
 						   text-align:center;
 						   font-size: 12px;
+						   overflow: hidden;
 						  }
 					.logo{
 					  			 width: 996px;
