@@ -8,9 +8,9 @@ for (var i = 0; i < 5; i++) {
 
 var user = prompt('Введите имя пользователя');
 
-function find(arr, user) {
+function find(arr) {
 	for (var j = 0; j < arr.length; j++) {
-     if ( arr[i] == user ) 
+     if ( arr[j] == user ) 
      return true;
   }
 
