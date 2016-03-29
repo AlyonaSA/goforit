@@ -56,7 +56,7 @@ var data = {
 			
 			var listNum = document.createElement('ol');
 			questionBox.appendChild(listNum);
-for (var k = 0; k < data.questions[i].questionName.length; k++) {
+			for (var k = 0; k < data.questions[i].questionName.length; k++) {
 			var listLi = document.createElement('li');
 			listLi.innerHTML = data.questions[i].questionName[k].name;
 			listNum.appendChild(listLi);

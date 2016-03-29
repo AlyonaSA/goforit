@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic&subset=latin,cyrillic); 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic&subset=latin,cyrillic); /*я конечно сделал, но момент дз шрифты мы еще не проходили если че*/
 *{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -15,20 +15,24 @@ html, body{
 
 .wrapper{
 	display: table;
+	overflow: hidden;
+	table-layout: fixed;
 	height: 100%;
 	width: 100%;
-	table-layout: fixed;
 	min-width: 1060px;
 }
-
+.w1{
+	display: table-row;
+	height: 100%;	
+}
 .container{
-	padding: 0 30px;
+	padding: 0 10px;
 	width: 1040px;
- 	height: 100%;
 	margin: 0 auto;
 }
 
-
+/*HEADER*/
+/*СДЕЛАЛ LOGO как ссылку с изображением*/
 .header{
 	margin-top: 50px;
 	margin-bottom: 40px;
@@ -37,13 +41,13 @@ html, body{
 	margin-bottom: 40px;
 }
 
-/*http://colorzilla.com/gradient-editor/#5e5e5e+0,444343+100 */
+/* MAINMENU*/
 .main-menu{	
-	background: rgb(94,94,94); 
-    background: -moz-linear-gradient(top,  rgba(94,94,94,1) 0%, rgba(68,67,67,1) 100%); 
-    background: -webkit-linear-gradient(top,  rgba(94,94,94,1) 0%,rgba(68,67,67,1) 100%); 
-    background: linear-gradient(to bottom,  rgba(94,94,94,1) 0%,rgba(68,67,67,1) 100%); 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e5e5e', endColorstr='#444343',GradientType=0); 
+	background: rgb(94,94,94); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(94,94,94,1) 0%, rgba(68,67,67,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(94,94,94,1) 0%,rgba(68,67,67,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(94,94,94,1) 0%,rgba(68,67,67,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e5e5e', endColorstr='#444343',GradientType=0); /* IE6-9 */
 }
 .main-menu-list{
 	margin: 0;
@@ -54,14 +58,13 @@ html, body{
 	border-left: 1px solid transparent;
 	border-right: 1px solid transparent;
 }
-/*  http://colorzilla.com/gradient-editor/#4a4a4a+0,2e2e2e+100 */
 .main-menu li:hover{
-	
-    background: rgb(74,74,74); 
-    background: -moz-linear-gradient(top, rgba(74,74,74,1) 0%, rgba(46,46,46,1) 100%); 
-    background: -webkit-linear-gradient(top, rgba(74,74,74,1) 0%,rgba(46,46,46,1) 100%); 
-    background: linear-gradient(to bottom, rgba(74,74,74,1) 0%,rgba(46,46,46,1) 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4a4a', endColorstr='#2e2e2e',GradientType=0 ); 
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a4a4a+0,2e2e2e+100 */
+    background: rgb(74,74,74); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(74,74,74,1) 0%, rgba(46,46,46,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(74,74,74,1) 0%,rgba(46,46,46,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(74,74,74,1) 0%,rgba(46,46,46,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4a4a', endColorstr='#2e2e2e',GradientType=0 ); /* IE6-9 */
     border-left: 1px solid #838383;
     border-right: 1px solid #838383;
 }
@@ -72,10 +75,13 @@ html, body{
 	color: #fff;
 }
 
-
+/*CONTAINER в который засунул левую менюху и правый контент*/
+.main{
+	width: 100%;
+}
 .left-menu{
 	display: block;
-	width: 240px; 
+	width: 240px;  /*выключи ее и посмотри что будет при навведении на бытовую технику*/
 	float: left;
 	margin-right: 48px;
 }
@@ -86,12 +92,14 @@ html, body{
 }
 .left-menu-list li{
 	border-bottom: 1px solid #c8c8c8;
-    display: block;
-	width: 100%;}
+}
 .left-menu-list li:last-child{
 	border-bottom: none;
 }
-
+.left-menu-list li{
+	display: block;
+	width: 100%;
+}
 .left-menu-list li a{
 	display: block;
 	width: 100%;
@@ -110,6 +118,7 @@ html, body{
 	background-color: #f9f9f9;
 }
 
+/*Основной контент*/
 .main-content{
 	display: block;
 	overflow: hidden;
@@ -125,7 +134,7 @@ html, body{
 	line-height: 22px;
 }
 
-
+/*FOOTER*/
 .footer{
 	overflow: hidden;
 	margin-bottom: 60px;	
@@ -166,11 +175,10 @@ html, body{
 	color: #2c2c2c;
 }
 
+/*CLEAR FIX*/
+
 .clearfix:after{
 	content: '';
 	display: block;
 	clear: both;
-	height: 0;
-	overflow: hidden;
-	visibility: hidden;
 }
