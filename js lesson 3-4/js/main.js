@@ -47,19 +47,14 @@ var data = {
 		var titlePage = document.createElement('h2');
 		titlePage.innerHTML = data.pageTitle;
 		wrapper.appendChild(titlePage);
+		var listNum = document.createElement('ol');
+		wrapper.appendChild(listNum);
 	},
 	buildList: function() {
 		for(var i = 0; i < data.questions.length; i++) {
-			var questionBox = document.createElement('div');
-			questionBox.className = 'questionBox';
-			document.querySelector('.wrapper').appendChild(questionBox);
-			
-			var listNum = document.createElement('ol');
-			questionBox.appendChild(listNum);
-			for (var k = 0; k < data.questions[i].questionName.length; k++) {
 			var listLi = document.createElement('li');
-			listLi.innerHTML = data.questions[i].questionName[k].name;
-			listNum.appendChild(listLi);
+			listLi.innerHTML = data.questions[i].questionName.name;
+			document.querySelector('ol').appendChild(listLi);
 			
 			var listWrap = document.createElement('ul');
 			listLi.appendChild(listWrap);
@@ -82,7 +77,6 @@ var data = {
 			
 			}
 			}
-		}
 	},
 	buildButton: function() {
 		var questionBox = document.querySelector('.wrapper');
