@@ -1,0 +1,38 @@
+body {
+			background: #AFEEEE;
+		}
+		.timer {
+			font-size: 130px;
+			text-align: center;
+			margin-top: 100px;
+			margin-bottom: 50px;
+		}
+		.timerBtns {
+			text-align: center;
+		}
+		button {
+			font-size: 30px;
+			width: 250px;
+			border-radius: 30px;
+			border: 5px solid black;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			font-weight: bold;
+		}
+		.js-reset {
+			background: linear-gradient(to top left, red, white);
+		}
+		.js-split {
+			background: linear-gradient(to top left, orange, white);
+		}
+		.js-start {
+			background: linear-gradient(to top left, green, white);
+		}
+		.split {
+			width: 400px;
+			margin: 0 auto;
+			background: linear-gradient(to left, blue, 	#AFEEEE);
+			border-radius: 30px;
+			font-size: 20px;
+			text-align: center;
+		}
