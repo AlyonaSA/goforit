@@ -1,0 +1,54 @@
+.wrapper {
+  	background: #87CEFA;
+  	padding: 10px;
+  	margin: 40px;
+  }
+  .niceCheck {
+	    width: 17px;
+	    height: 17px;
+	    display: inline-block;
+	    cursor: pointer;
+	    background: url(img/checkbox.png);
+	    overflow: hidden;
+	}
+	.niceChecked {
+	    background-position: 0 -17px;
+	}
+	.niceCheck input {
+	    margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
+	}
+
+
+
+input[type=checkbox] {
+02
+	    position: absolute;
+	    clip: rect(0, 0, 0, 0);
+	}
+05
+	label {
+06
+	    cursor: pointer;
+07
+	}
+08
+	label:after {
+	    content: " ";
+	    display: inline-block;
+	    width: 17px;
+	    height: 17px;
+	    background: url(img/checkbox.png);
+	    position: relative;
+	    top: 3px;
+	    margin-left: 15px;
+	}
+	input[type=checkbox]:checked + label:after {
+	background-position: 0 -17px;
+	}
+	label:hover:after {
+
+	background-position: 0 -34px;
+	}
+	input[type=checkbox]:checked + label:hover:after {
+	background-position: 0 -51px;
+	}

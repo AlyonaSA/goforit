@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style3.css">
+ </head>
+ <body>
+ 	<div class="wrapper">
+ 	<div><label for="ch1">label 1</label><input type="checkbox" class="niceCheck" id="ch1" tabindex="1" /> </div>
+	<div><label for="ch2">label 2</label><input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" /></div>
+	<div><label for="ch3">label 3</label><input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" /></div>
+</div>
+<div class="wrapper">
+	<div>
+	<label for="test-check1">label 1</label>
+	<input type="checkbox" id="test-check1" />
+</div>
+<div>
+	<label for="test-check2">label 2</label>
+	<input type="checkbox" id="test-check2" />
+</div>
+<div>
+	<label for="test-check3">label 3</label>
+	<input type="checkbox" id="test-check3" />
+</div>
+</div>
+
+
+
+	<script type="text/javascript">
+	jQuery(document).ready(function(){
+	jQuery(".niceCheck").mousedown(
+	/* при клике на чекбоксе меняем его вид и значение */
+	function() {
+	     changeCheck(jQuery(this));
+	});
+	jQuery(".niceCheck").each(
+	/* при загрузке страницы нужно проверить какое значение имеет чекбокс и в соответствии с ним выставить вид */
+	function() {
+	     changeCheckStart(jQuery(this));
+	});
+	                                        });
+	function changeCheck(el)
+	/* 
+25
+	    функция смены вида и значения чекбокса
+26
+	    el - span контейнер дял обычного чекбокса
+27
+	    input - чекбокс
+28
+	*/
+	{
+	     var el = el,
+	          input = el.find("input").eq(0);
+	     if(!input.attr("checked")) {
+	        el.css("background-position","0 -17px");  
+	        input.attr("checked", true)
+	    } else {
+	        el.css("background-position","0 0"); 
+	        input.attr("checked", false)
+	    }
+	     return true;
+	}
+	function changeCheckStart(el)
+	/* 
+44
+	    если установлен атрибут checked, меняем вид чекбокса
+45
+	*/
+	{
+	var el = el,
+	        input = el.find("input").eq(0);
+	      if(input.attr("checked")) {
+	        el.css("background-position","0 -17px");    
+	        }
+	     return true;
+	}
+	</script>
+ </body>
+</html>
