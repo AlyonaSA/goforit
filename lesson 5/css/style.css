@@ -87,8 +87,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dcbfd', end
 .white {
 	background: url('../img/inventicons29.png') 0 50% no-repeat;
 }
-
-
+.white2 {
+	color: white;
+	text-decoration: underline;
+}
+.part {
+	color: white;
+}
 
 
 
