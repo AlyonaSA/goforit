@@ -21,6 +21,23 @@ var btnReset = document.querySelector('.js-reset');
 var lastTime = 0;
 var start = false;
 
+	
+function stopTimer() {
+	if(start) {
+	if (init == 0) {
+		init = 1; 
+		clearTimer();
+	}
+	else {
+		
+	}
+	//console.log(totalTime);
+	}
+	else {
+		clearTimer();
+	}
+		
+}
 
 function startTimer() {
 	if(init == 0) {

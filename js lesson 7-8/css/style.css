@@ -1,0 +1,72 @@
+body {
+		background-color: #D3D3D3;
+	}
+	#tabs-1 {
+		display: block;
+	}
+	ul {
+		list-style: none;
+		margin: 0px;
+		padding: 0;
+		
+	}
+	ul li {
+		display: inline-block;
+		border-left: 1px solid grey;
+		border-right: 1px solid grey;
+		border-top: 1px solid grey;
+		border-top-right-radius: 30px;
+		border-top-left-radius: 30px;
+		background-color: #E6E6FA;
+		padding: 10px;
+	}
+	a {
+		text-decoration: none;
+		color: black;
+	}
+	.tab {width: 500px;
+		display: none;
+		background-color: white;
+		padding: 7px;
+		border: 1px solid grey;
+	}
+	li:hover {
+		background-color: white;
+	}
+	.is-active {
+		display: block;
+	}
+
+
+
+
+
+
+	form {
+		margin: 100px 0px;
+		width: 520px;
+		border: 2px solid black;
+		padding: 30px 10px;
+	}
+	label {
+		padding: 10px;
+		width: 70px;
+		display: inline-block;
+	}
+	.help {
+		background: white;
+		padding: 0px 10px;
+		display: inline-block;
+		width: 230px;
+		border: 1px solid grey;
+		border-radius: 5px;
+	}
+	.btnHelp {
+		display: block;
+		width: 100px;
+		text-align: center;
+		padding: 5px;
+		background-color: white;
+		border: 1px solid grey;
+		border-radius: 30px;
+	}
