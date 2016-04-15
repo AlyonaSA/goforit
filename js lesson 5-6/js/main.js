@@ -109,6 +109,7 @@ function pauseTimer() {
 	//console.log(totalTime);
 	}
 	else {
+		dateTimeObj = new Date();
 		startTimer();
 	btnStart.addEventListener('click', startTimer);
 		btnStart.innerHTML = 'Pause';
