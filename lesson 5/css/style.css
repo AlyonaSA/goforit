@@ -85,7 +85,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dcbfd', end
 	margin-left: 30px;
 }
 .white {
-	background: url('../img/inventicons29.png') 0 50% no-repeat;
+	background: url('../img/inventicons29.png') 0 10% no-repeat;
 }
 .white2 {
 	color: white;
