@@ -1,10 +1,3 @@
-$("a").on('click', function () {
-        $(".tab").hide();
-        $($(this).attr("href")).show();
-   });
-
-
-
 
 $('input').siblings('span').hide();
 $(function() {
