@@ -1,0 +1,9 @@
+body {
+	background: #87CEFA;
+}
+.articles {
+	font-style: italic;
+	margin: 0 auto;
+	width: 1000px;
+	border-bottom: 1px solid blue;
+}

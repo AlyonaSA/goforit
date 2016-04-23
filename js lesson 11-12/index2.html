@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Шаблонизатор</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+  </head>
+  <body>
+  	<script type="text/template" id="test">
+  		<% for (var i = 0; i < data.length; i++) { %>
+	  		<div class="articles">
+	  			<h1><%= data[i].name %></h1>
+	  			<p><%= data[i].content %></p>
+	  		</div>
+  		<% }; %>
+  	</script>
+  </body>
+</html>
