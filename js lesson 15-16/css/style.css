@@ -1,0 +1,32 @@
+ body {
+    	text-align: center;
+    }
+    .wrapper {
+    	padding-top: 10px;
+    }
+    img {
+    	height: 100px;
+    }
+    .js-btn {
+    	padding: 7px;
+    	border: 1px solid #2E9AFE;
+    	background: #2E9AFE;
+    	color: white;
+    }
+    .js-input {
+    	padding: 7px;
+    	width: 350px;
+    }
+    .item {
+    	margin: 0 auto;
+    	padding: 10px;
+    	width: 650px;
+    }
+    .link {
+    	text-decoration: none;
+    	color: blue;
+    	font-weight: bold;
+    }
+    .content {
+    	font-size: 13px;
+    }
