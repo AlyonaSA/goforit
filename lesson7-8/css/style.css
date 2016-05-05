@@ -40,7 +40,7 @@ header {
 	padding-top: 60px;
 	padding-bottom: 120px;
 }
-nav {
+ul.menu {
 	float: right;
 }
 header ul li {
@@ -122,6 +122,9 @@ header ul li a:hover {
   position: absolute;
     top: 385px;
     right: 258px;
+}
+.img-480 {
+  display: none;
 }
 
 /*ABOUT COMPANY*/
@@ -437,23 +440,26 @@ footer span a {
     display: none;
     position: absolute;
   }
+  .menu {
+    float: none;
+  }
 }
+
 @media(max-width: 768px) {
   .center-width {
-    width: 300px;
+    width: 400px;
   }
   .firm {
-    text-align: center;
-  }
-  .nav {
     float: none;
+    text-align: center;
   }
   .menu {
     display: none;
-    float: none;
   }
   .menu-480 {
     display: block;
+    float: none;
+    margin: 0 auto;
   }
   ul {
     margin: 0;
@@ -507,4 +513,61 @@ ul.menu-480 > li:hover > ul.submenu {
 .center-header-article {
   display: none;
 }
+.img-480 {
+  position: absolute;
+  display: block;
+  top: 224px;
+  right: 7px;
+}
+.main-img {
+  display: none;
+}
+.main-play {
+  display: none;
+}
+.center-header-title {
+  font-size: 40px;
+}
+.center-header-mean {
+  font-size: 17px;
+}
+.head-bg {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.company-items {
+  width: 100%;
+}
+.sponsor {
+  padding: 5px 5px;
+}
+.copyright {
+  float: none;
+  width: 100%
+}
+.comments {
+  padding-top: 30px;
+  float: none;
+  width: 100%
+}
+.menu-footer a {
+  font-size: 13px;
+}
+.footer-wrapper span {
+  float: none;
+}
+.footer-wrapper {
+  text-align: center;
+}
+}
+@media(max-width: 320px) {
+  .center-width {
+    width: 300px;
+  }
+  .menu-footer {
+    display: none;
+  }
+  .img-480 {
+    display: none;
+  }
 }
