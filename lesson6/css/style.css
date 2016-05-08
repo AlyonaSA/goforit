@@ -287,13 +287,11 @@ box-shadow: 3px 3px 3px -1px rgba(153,145,153,1);
 }
 .delete-marker li {
   color:#485c74;
+  line-height: 2;
 }
 .delete-marker a:hover{
   font-weight: bold;
   text-decoration: underline;
-}
-.forma2 {
-  margin-top: 25px;
 }
 .delete-marker label {
   color:#485c74;
