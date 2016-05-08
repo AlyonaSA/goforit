@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/teml.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<script type="text/html" id='test'>
+            <form class="test" action="">
+                <p class="title"><%= data.pageTitle %></p>
+                <% for (var i = 0; i < data.questions.length; i++ ) { %>
+                    <div class="block">
+                        <p><%= data.questions[i].questionName%></p>
+                        <ul>
+                            <% for (var j = 0; j < data.questions[i].variant.length; j++) { %>
+                                <li>
+                                <label>
+                                <input type="checkbox" name="<%= data.questions[i].inputName[j] %>">
+                                <span><%= data.questions[i].variant[j].answer %></span>
+                                </label>
+                                </li>
+                            <% }; %>
+                        </ul>
+                    </div>
+                <% }; %>
+                <input  class="js-submit" type="submit" value="<%= data.result %>">
+            </form>
+    </script>
+
+<div class="modal js-modal">
+   <div class="js-close close-modal">Закрыть</div>
+   <div class="result js-result"></div>
+</div>
+
+</body>
+</html>

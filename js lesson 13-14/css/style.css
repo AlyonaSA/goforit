@@ -1,0 +1,48 @@
+*{
+	list-style: none;
+}
+.test{
+	width: 600px;
+}
+.title{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.modal{
+ 	position: absolute;
+    width: 400px;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    background: rgba(236, 228, 228, 0.8);
+    color: black;
+    display: none;
+    top: 25%;
+  	left: 25%;
+   
+}
+
+.cover{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0 ,0, 0.5);
+}
+.show{
+	display: block;
+}
+.close-modal{
+	position: relative;
+    padding: 7px;
+    z-index: 10000;
+    float: right;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.result{
+	padding: 70px;
+	font-size: 30px;
+}
