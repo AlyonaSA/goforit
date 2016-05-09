@@ -3,7 +3,7 @@ $(document).ready(function() {
     var rightUIEl = $('.carousel-arrow-right');
     var elementsList = $('.carousel-list');
  
-    var pixelsOffset = 125;
+    var pixelsOffset = 315;
     var currentLeftValue = 0;
     var elementsCount = elementsList.find('li').length;
     var minimumOffset = - ((elementsCount - 5) * pixelsOffset);
