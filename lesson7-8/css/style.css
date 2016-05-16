@@ -519,6 +519,7 @@ footer {
     display: none;
   }
   .menu-mobile1 {
+    width: 191px;
     display: block;
     text-align: center;
     margin: 0 auto;
@@ -529,6 +530,9 @@ footer {
   color: #fff;
   margin: 0 auto;
 }
+.border-home {
+  width: 40px;
+  }
   ul.menu-mobile {
     margin: 0;
     padding: 0;
@@ -536,6 +540,7 @@ footer {
     margin: 0 auto;
     text-align: center;
 }
+
 ul.menu-mobile:after {
     display: block;
     content: ' ';
@@ -543,7 +548,6 @@ ul.menu-mobile:after {
     float: none;
 }
 ul.menu-mobile > li {
-    float: left;
     position: relative;
 }
 ul.menu-mobile > li > a {
@@ -553,15 +557,16 @@ ul.menu-mobile > li > a {
     text-decoration: none;
 }
 ul.submenu {
+  z-index: 1;
     display: none;
     position: absolute;
-    width: 150px;
     left: 0;
     text-align: center;
     background: black;
     opacity: 0.8;
     border-radius: 12px;
     border: 1px solid black;
+    padding-left: 0;
 }
 ul.submenu > li {
     display: block;
@@ -570,7 +575,7 @@ ul.submenu > li {
 }
 ul.submenu > li > a {
     display: block;
-    padding: 10px;
+    padding: 10px 42px;
     color: white;
     text-decoration: none;
 }
