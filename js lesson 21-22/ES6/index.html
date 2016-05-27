@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+        <script src="https://js.cx/babel-core/browser.min.js"></script>
+    </head>
+
+    <body>
+
+        <script type="text/html" id="list-template">
+            <form class="test" action="">
+                <p class="title"><%= data.pageTitle %></p>
+                <% for (var i = 0; i < data.categories.length; i++ ) { %>
+                    <div class="block">
+                        <p><%= data.categories[i].questionName%></p>
+                        <ul>
+                            <% for (var j = 0; j < data.categories[i].variant.length; j++) { %>
+                                <li><label><input type="checkbox" name="<%= data.categories[i].inputName[j] %>"><span><%= data.categories[i].variant[j].answer %></span></label></li>
+                            <% }; %>
+                        </ul>
+                    </div>
+                <% }; %>
+                <input  class="js-verify" type="submit" value="<%= data.result %>">
+            </form>
+    </script>
+
+        <div class="modal js-modal">
+            <div class="js-close close-modal">Close</div>
+            <div class="result js-result"></div>
+        </div>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

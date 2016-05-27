@@ -1,0 +1,66 @@
+*{
+  font-family: 'Chadwick Cyrillic', cursive;
+}
+.clear{
+  clear:both;
+}
+body{
+  background-image: url(../img/todo.jpg);
+  background-position: center;
+}
+.wrapper{
+  min-height: 575px;
+  width: 608px;
+  margin: 50px auto;
+  padding: 20px;
+}
+.item-list{
+  list-style: none;
+}
+.item-list li{
+  width: 100%;
+  margin-top: 5px;
+}
+.controlls{
+  height: 20px;
+  width: 210px;
+  margin: 30px auto;
+
+}
+.item-value{
+  margin: auto;
+  margin-left: 19px;
+  height: 12px;
+  width: 135px;
+  background: #F2F5A9;
+}
+.item-add{
+  font-family: sans-serif;
+  background: #FACC2E;
+  border: 1px solid #DBA901;
+}
+p{
+  font-size: 40px;
+  text-align: center;
+}
+.dispaly-item{
+  font-size: 26px;
+  width:370px;
+  overflow: hidden;
+  cursor: pointer;
+  float: left;
+  margin-left: 100px;
+}
+.item-delete{
+  cursor: pointer;
+  float: right;
+  font-size: 30px;
+  margin-right: 50px;
+}
+.edit{
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 26px;
+  margin-left: 115px;
+}
