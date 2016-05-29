@@ -1,0 +1,101 @@
+.header img, .navigation, .navigation li, .menu li, .search, .content-upper li, .number, .number-text, .content-middle li, .news, .banners, .sponsors li, .footer>div>ul>li {
+    display: inline-block;
+}
+.textblock, .comments, .footer>div>p a, .footer ul ul a {
+    color: $color-gray;
+}
+.menu a, .content-middle h1, .content-middle li a span, .content-middle h2, .banners a:active span, .footer h2 {
+    color: #fff;
+}
+.menu a, h2, .number-text a, .footer li a, .footer p {
+    font-weight: bolder;
+}
+.preheader {
+    position: relative;
+    padding: $preheader-padding 0;
+}
+.preheader>a img {
+    vertical-align: bottom;
+}
+.navigation {
+    position: absolute;
+    right: 0px;
+    line-height: $preheader-padding;
+}
+.navigation li {
+    vertical-align: middle;
+}
+.navigation a {
+    position: relative;
+    display: block;
+    margin-left: $preheader-margin;
+    width: $preheader-social;
+    height: $preheader-social;
+    overflow: hidden;
+}
+.navigation img {
+    position: relative;
+    top: 0;
+}
+.navigation a:hover img {
+    top: -20px;
+}
+.navigation li:nth-child(1) img {
+    left: 0;
+}
+.navigation li:nth-child(2) img {
+    left: -18px;
+}
+.navigation li:nth-child(3) img {
+    left: -36px;
+}
+.navigation li:nth-child(4) img {
+    left: -54px;
+}
+.navigation li:nth-child(5) img {
+    left: -72px;
+}
+.menu {
+    position: relative;
+    height: $menu-height;
+    background-color: $menu-bgcolor;
+}
+.menu li {
+    height: 100%;
+    margin-right: -4px;
+}
+.menu li:first-child a {
+    background-color: $menu-bgcolor-home;
+}
+.menu a {
+    text-transform: uppercase;
+    line-height: $menu-height;
+    border-right: 1px solid #000;
+    display: block;
+    padding: 0 $menu-padding-horizontal;
+}
+.menu a:hover {
+    color: $menu-color;
+}
+.search {
+    position: absolute;
+    right: $search-icon-vertical;
+    line-height: $menu-height;
+}
+.search input {
+    vertical-align: middle;
+    background: transparent;
+}
+.search input[type="text"] {
+    margin-right: -41px;
+    border: 1px solid #000;
+    padding: $search-icon-vertical;
+    padding-right: 3*$search-icon-horizontal;
+    background: $search-color;
+}
+.search input[type="button"] {
+    padding: $search-icon-vertical $search-icon-horizontal;
+    border: 0;
+    background: $search-url no-repeat;
+    background-position: center;
+}

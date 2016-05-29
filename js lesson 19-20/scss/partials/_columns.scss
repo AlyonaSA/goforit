@@ -1,0 +1,44 @@
+.content-middle {
+    background-color: $menu-bgcolor;
+}
+.content-middle .container {
+    padding: $pictures-top 0 $pictures-bottom;
+}
+.content-middle h1 {
+    padding-bottom: 50px;
+}
+.content-middle h2 {
+    padding-top: 30px;
+}
+.content-middle ul {
+    width: 100%;
+}
+.content-middle li {
+    box-sizing: content-box;
+    width: $picture-size;
+    padding-right: $pictures-space;
+    text-align: center;
+}
+.content-middle li:last-child {
+    padding-right: 0;
+}
+.content-middle li a {
+    position: relative;
+    display: block;
+}
+.content-middle li a span {
+    position: absolute;
+    display: none;
+    font-size: 80px;
+}
+.content-middle li a:hover h2 {
+    color: $menu-color;
+}
+.content-middle li a:hover span {
+    display: block;
+    width: $picture-size;
+    height: $picture-size;
+    background: $pictures-bg;
+    text-align: center;
+    line-height: $picture-size;
+}

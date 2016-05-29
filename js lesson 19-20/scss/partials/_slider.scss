@@ -1,0 +1,45 @@
+fade {
+    padding: $carousel-top 0 $carousel-bottom;
+}
+.content-upper ul {
+    padding-bottom: $number-padding;
+}
+.content-upper li {
+    margin-right: $number-text-margin;
+    vertical-align: top;
+}
+.content-upper li:last-child {
+    margin-right: 0;
+}
+.textblock {
+    padding: $textblock 0;
+}
+.number {
+    width: $number;
+    margin-right: $number-margin;
+    vertical-align: inherit;
+    font-size: $number-size;
+    line-height: $number-line;
+    color: $color-gray-trans;
+}
+.number-text {
+    width: $number-text;
+}
+.number-text a, .number-text p:last-child {
+    position: relative;
+    overflow: hidden;
+    height: $read-more;
+    line-height: $read-more;
+    vertical-align: top;
+}
+.number-text a:hover {
+    color: $menu-bgcolor-home;
+}
+.number-text a img {
+    position: relative;
+    top: 5px;
+    margin-left: 1em;
+}
+.number-text a:hover img {
+    top: -14px;
+}

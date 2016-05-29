@@ -1,0 +1,41 @@
+
+.footer {
+    background: $menu-bgcolor;
+}
+.footer h2 {
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+.footer>div>ul>li {
+    margin-right: $footer-margin;
+    padding: $footer-padding-top 0 $footer-padding-bottom;
+    width: $footer-width;
+}
+.footer>div>ul>li:last-child {
+    margin-right: 0;
+}
+.footer ul ul li {
+    line-height: 35px;
+    border-bottom: 1px solid $color-gray;
+}
+.footer li a:hover {
+    color: $menu-bgcolor-home;
+}
+.footer>div:last-child {
+    background: $search-color;
+}
+.footer p {
+    position: relative;
+    line-height: 60px;
+}
+.footer p a {
+    margin-right: 20px;
+}
+.footer p a:last-child {
+    position: absolute;
+    right: 0;
+    margin-right: 0;
+}
+.footer p img {
+    vertical-align: middle;
+}
