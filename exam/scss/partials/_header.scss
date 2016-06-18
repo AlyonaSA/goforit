@@ -1,0 +1,128 @@
+
+.header {
+  color: $white;
+  text-align: center;
+  background-position: 50% 50%;
+  background-repeat: repeat, no-repeat;
+  background-size: cover; 
+}
+.headerBg {
+  display: none;
+}
+.logo {
+  display: block;
+  padding-left: 70px;
+  padding-top: 116px;
+}
+.logo img{
+    width: 178px;
+    height: 20px;
+}
+.login {
+  font-family: $font-montserregular;
+  font-weight: bold;
+  display: block;
+  padding-top: 20px;
+}
+.log_in input{
+    border-radius: 35px;
+  padding: 6px 17px;
+   border: 3px solid transparent;
+ background: transparent;
+  color: $white;
+  margin-right: 10px; 
+}
+.log_in input:hover{
+ border: 3px solid $white;
+  padding: 6px 17px;
+  border-radius: 35px;
+  color: $lightred;
+  }
+
+input[type="submit"]{
+   background: transparent;
+  color: $white;
+  border: 3px solid transparent;
+  margin-right: 10px;
+  padding: 6px 17px;
+  border-radius: 35px; 
+  
+} 
+input[type="submit"]:hover{
+ border: 3px solid $white;
+  padding: 6px 17px;
+  border-radius: 35px;
+}
+.form-search input{
+  font-weight: bold;
+  background-color: $lightred;
+  color: $white;
+  border: 2px solid $lightred; 
+  padding: 10px 45px;
+  border-radius: 33px;
+   font-family: $font-montserregular;
+}
+.form-search input:hover{
+  border: 2px solid $white;
+  background-color: rgba(243,152,162,0.7);
+  color: $active_txt;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+ 
+}
+.title {
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+}
+.title__name{
+  font-weight: bold;
+  display: inline-block;
+  color: $white;
+  width: 253px;
+  font-family: $font-bold;
+  font-size: 25px;
+}
+.title__text{
+  display: inline-block;
+  font-size: 18px;
+  width: 238px;
+  text-align: center;
+  font-family: $font-robotolight;
+}
+.form-search{
+  padding: 20px 0 135px;
+}
+@media (min-width: 321px) {
+  
+.login{
+  float: right;
+    margin-right: 56px;
+  padding-top: 40px;
+}
+.logo{
+  display: block;
+  padding-left: 70px;
+  padding-top: 52px;
+}
+.title__text{
+  width: 100%;
+}
+.form-search input{
+  padding: 10px 30px;
+}
+}
+@media(min-width: 769px) {
+.title{
+  padding-top: 117px;
+}
+.title__name{
+  font-size: 48px;
+  width: 480px;
+  font-family: $font-bold;
+}
+.title__text{
+  padding: 8px;
+  font-size: 23px;
+}
+}

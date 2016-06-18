@@ -1,0 +1,189 @@
+.person-box{
+  display: block;
+  position: relative;
+  padding-bottom: 30px;
+}
+.partner_box_title{
+  display: inline-block;
+  font-size: 23px;
+  color: $darkgray;
+  text-align: center;
+  padding: 30px 20px 20px 20px;
+  font-family: $font-bold;
+}
+.person-box img{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-left: 100px;
+}
+.shape{
+  display: block;
+  position: absolute;
+  right: 89px;
+  bottom: 115px;
+  background: $lightred;
+  width: 45px;
+  height: 45px;
+  border: 4px solid $white;
+  border-radius: 50%;
+}
+.shape img{
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  width: 16px;
+  height: 16px;
+}
+.person-box__name{
+  text-align: center;
+  color: $middlegray;
+  font-size: 16px;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 14px;
+  font-family: $font-bold;
+}
+.person-box__text{
+   text-align: center;
+  font-size: 14px;
+  width: 213px;
+  margin: 0;
+  margin-left: 54px;
+  color: $lightgray;
+  font-family: $font-robotolight;
+}
+.shape2{
+  display: block;
+  position: absolute;
+  right: 89px;
+  bottom: 150px;
+  background: $yellowe;
+  width: 45px;
+  height: 45px;
+  border: 4px solid $white;
+  border-radius: 50%;
+}
+.shape2 img{
+  position: absolute;
+  right: 10px;
+  bottom: 13px;
+  width: 16px;
+  height: 16px;
+}
+.shape3{
+  display: block;
+  position: absolute;
+  right: 89px;
+  bottom: 115px;
+  background: $lightgreen;
+  width: 45px;
+  height: 45px;
+  border: 4px solid $white;
+  border-radius: 50%;
+}
+.shape3 img{
+  position: absolute;
+  right: 10px;
+  bottom: 13px;
+  width: 16px;
+  height: 16px;
+}
+.shape4{
+  display: block;
+  position: absolute;
+  right: 89px;
+  bottom: 115px;
+  background: $blue;
+  width: 45px;
+  height: 45px;
+  border: 4px solid $white;
+  border-radius: 50%;
+}
+.shape4 img{
+  position: absolute;
+  right: 12px;
+  bottom: 11px;
+  width: 16px;
+  height: 16px;
+}
+.partners_box_link{
+  border-radius: 50px;
+  display: inline-block;
+  background: $white;
+  border: 2px solid $lightred;
+  color: $lightred;
+  border-radius: 18px;
+  font-family: $font-bold;
+  padding: 11px 33px;
+  text-decoration: none;
+  margin-left: 58px;
+}
+.partners_box_link:hover{
+   -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0px 1px 10px 5px rgba(242,113,125,0.5);
+}
+
+@media(min-width: 321px) {
+}
+
+@media(min-width: 769px) {
+    .partners_box_link{ 
+      
+    border-radius: 50px;
+    padding: 11px 33px;
+    text-decoration: none;
+    margin-left: 210px;
+  }
+.partner_box{
+  display: block;
+  width: 636px;
+  margin: 0 auto;
+}
+.partner_box_title{
+  padding: 100px 130px 35px 130px;
+}
+.person-box{
+  width: 318px;
+  margin-bottom: 20px;
+  float: left;
+}
+.partners__link{
+  margin-left: 200px;
+}
+}
+@media(min-width: 1025px) {
+  
+.partner_box{
+  width: 940px;
+  margin: 0 auto;
+}
+.partner_box_title{
+  padding: 70px 283px 30px 283px;
+}
+.person-box{
+  width: 235px;
+  position: relative;
+}
+.person-box img{
+  margin-left: 50px;
+}
+.shape{
+  right: 40px;
+  bottom: 79px;
+}
+.person-box__text{
+  margin: 0;
+}
+.shape,
+.shape2,
+.shape3,
+.shape4{
+  right: 53px;
+  top: 79px;
+}
+.partners_box_link{
+  margin: 20px 320px 20px 367px;
+}
+}

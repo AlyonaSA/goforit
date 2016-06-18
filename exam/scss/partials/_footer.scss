@@ -1,0 +1,148 @@
+.footer{
+  display: block;
+  padding-top: 18px;
+}
+.footer img{
+  margin-left: 87px;
+  width: 142px;
+  height: 16px;
+}
+.footer_name{
+  font-family: $font-bold;
+}
+.company{
+  padding: 18px 120px 6px;
+}
+.company a{
+  text-decoration: none;
+  color: $darkgray;
+  font-size: 15px;
+}
+.company a:hover{
+  color: $middlered;
+}
+.menu__link{
+  text-decoration: none;
+  padding: 0 8px 0 10px;
+  color: $link_gray;
+}
+.menu__link:hover{
+  color: $middlered;
+}
+.menu__item{
+  list-style: none;
+  float: left;
+}
+.menu__list{
+  margin: 0;
+}
+.partners{
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 15px;
+}
+.partners a{
+  color: $darkgray;
+  text-decoration: none; 
+}
+.partners a:hover{
+  color: $middlered;
+}
+.designe{
+  display: block;
+  text-align: center;
+  padding-top: 20px; 
+}
+.designe a{
+  color: $gray;
+  font-size: 13px;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 12px;
+}
+.designe img{
+  display: block;
+  width: 110px;
+  height: 24px;
+  margin-left: 102px;
+  margin-bottom: 20px;
+}
+@media(min-width: 321px) {
+}
+@media(min-width: 769px) {
+ 
+.footer{
+  position: relative;
+  margin-bottom: 30px;
+}
+.footer img{
+  display: block;
+  position: absolute;
+  top: 42px;
+  left: -41px;
+}
+.company{
+  padding-left: 260px;
+  padding-top: 25px;
+}
+.menu__item{
+  float: none;
+  padding: 7px 0 7px 0;
+}
+.menu__list{
+  padding-left: 250px;
+}
+.partners{
+  position: absolute;
+  top: 42px;
+  right: 273px;
+  padding: 0;
+}
+.designe{
+  position: absolute;
+  top: 42px;
+  right: 57px;
+  padding: 0;
+}
+.designe img{
+  position: absolute;
+  top: 26px;
+  left: -14px;
+  margin: 0;
+}
+}
+@media(min-width: 1025px) {
+  
+.footer{
+  position: relative;
+}
+.footer img{
+  top: 30px;
+  left: 0;
+  margin: 0;
+  position: relative;
+}
+.partners{
+  left: 320px;
+  top: 47px;
+}.company{
+  padding-top: 14px;
+  padding-left: 230px;
+}
+.menu__list{
+  padding-left: 222px;
+}
+.designe{
+  top: 45px;
+  right: 0;
+  height: 24px;
+}
+.designe a{
+  padding: 0;
+}
+.designe img{
+  top: 10px;
+  right: 0;
+}
+}

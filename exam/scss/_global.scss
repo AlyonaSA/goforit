@@ -1,0 +1,57 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box; 
+}
+
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  width: 100%; 
+}
+
+.wrapper {
+  min-width: 320px;
+  height: auto;
+  min-height: 100%;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  line-height: 1.2;
+  @media #{$medium-up} {
+    width: 768px;
+  }
+  @media #{$large-up} {
+    width: 1024px;
+  }
+  @media #{$xlarge-up} {
+    width: 1440px;
+  }
+}
+
+.container{
+  width: 320px;
+  margin: 0 auto; 
+  @media #{$medium-up} {
+    width: 768px;
+  }
+  @media #{$large-up} {
+    width: 1024px;
+  }
+  @media #{$xlarge-up} {
+    width: 1440px;
+  }
+}
+
+img {
+  display: block;
+  width: 100%; 
+}
+
+body {
+  font-size: 14px;
+  color: #666;
+   }
+

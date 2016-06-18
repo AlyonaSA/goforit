@@ -1,0 +1,89 @@
+//Utilities must use a camel case name, prefixed with a u namespace and should be set in utilities.scss
+//e.g. u-pullRight
+
+//Syntax: u-<utilityName>
+.u-clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.u-noMargin {
+    margin: 0;
+}
+.u-noPadding {
+    padding: 0;
+}
+.u-stripped {
+    margin: 0;
+    padding: 0;
+}
+.u-float-left {
+    float: left;
+}
+.u-float-right {
+    float: right;
+}
+.u-verticalAlign--center {
+    position: relative;
+    top: 50%;
+    display: block;
+    transform: translateY(-50%);
+}
+.u-verticalAlign--centerAbsolute {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+.u-align--center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//Effects
+.u-image--zoom img {
+    transform: scale(1, 1);
+    transition: 0.8s ease-out;
+}
+.u-image--zoom:hover img {
+    transform: scale(1.05, 1.05);
+    transition: 0.8s ease-out;
+}
+
+//Lists
+.u-list--plain {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.u-list--inline > li {
+    display: inline-block;
+}
+.u-list--justify {
+    font-size: 4px;
+    line-height: 0;
+    text-align: justify;
+    text-align-last: justify;
+    text-justify: newspaper;
+    zoom: 1;
+}
+.u-list--justify:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.u-list--justify > li {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.u-table {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
